@@ -1,3 +1,16 @@
+variable "ibmcloud_api_key" {
+  description = "specify your IBM Cloud user apikey"
+}
+
+variable "iaas_classic_username" {
+  description = "specify your IBM Cloud classic username"
+}
+
+variable "iaas_classic_api_key" {
+  description = "specify your IBM Cloud classic apikey"
+}
+
+
 provider "ibm" {
   ibmcloud_api_key   = var.ibmcloud_api_key
   generation         = 1
