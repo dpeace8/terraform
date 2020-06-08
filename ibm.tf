@@ -19,7 +19,7 @@ provider "ibm" {
   iaas_classic_api_key  = var.iaas_classic_api_key
 }
 resource "ibm_resource_group" "cos_group" {
-  name     = "test"
+  name     = "provision-test"
 }
 
 resource "ibm_resource_instance" "cos_instance" {
